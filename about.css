@@ -77,8 +77,6 @@ button{
 
 /* Basic things to add to every css end */
 
-/* our main style start  */
-
 /*----------------------- navbar style start  --------------------------------*/
 
 /* screen ki left right space ke liye  */
@@ -87,6 +85,12 @@ header{
     background-color: var(--navbar-color);
     position: relative;
     z-index: 3;
+}
+
+/* mere logo k color  */
+header nav .left-side-menu .logo a h3{
+    font-size: 30px;
+    font-weight: 600;
 }
 
 /* taki left-side left ho jaye aur right-side right */
@@ -107,12 +111,6 @@ header nav .left-side-menu{
     align-items: center;
     width: 70%;
 
-}
-
-/* mere logo k color  */
-header nav .left-side-menu .logo a h3{
-    font-size: 30px;
-    font-weight: 600;
 }
 
 /* image choti karne ke leye  
@@ -193,142 +191,11 @@ header .right-side-menu .sub-menu button{
 
 /* button prr hover kree  */
 header .right-side-menu .sub-menu button:hover{
-    background-color: var(--home-ka-color);
+    background-color: #680994;
     position: relative;
     z-index: 99;
 }
 /*----------------------  navbar style end -------------------------------------- */
-
-/*-------------------------------------------------- our main section start-----------------------------------------------------------------  */
-
-/*----------------------------------------------------- left side start ----------------------------------------------------------------------------------- */
-
-.main-section{
-    padding: 0 20rem;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10rem;
-}
-
-.main-section h2{
-
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 1rem;
-
-    display: flex;
-    align-items: center;
-    text-transform: capitalize;
-}
-
-.main-section a button{
-    border-radius: 10px;
-    background-color: #FF725E;
-    color: white;
-    font-size: 25px;
-    padding: 0 1px;
-    width: 150px;
-    height: 50px;
-}
-
-.main-section a button:hover{
-    background-color: #B326F6;
-    color: #680994;
-    font-size: 25px;
-    font-style: italic;
-}
-
-.main-section .main-left-side{
-
-    width: 50%;
-    height: 40vh;
-    display: flex;
-    position: absolute;
-    top: 252px;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-
-}
-
-/* yeh sab ek line m karne ke liye */
-.main-section .main-left-side .single-line{
-    display: flex;
-    justify-content: space-between;
-}
-.main-section .main-left-side .hello {
-    display: inline;
-    margin: 0 5px;
-    margin-bottom: 0; /* Adjust the margin bottom */
-}
-
-/* yeh sab ek line m laane ke liye */
-.main-section .main-left-side .im,
-.main-section .main-left-side .sarthak {
-    display: inline;
-    margin: 0 5px;
-    margin-top: 0;
-    font-size: 45px;
-    
-}
-.main-section .main-left-side .im{
-    color: #680994;
-    font-weight: 600;
-    font-size: 43px;
-}
-.main-section .main-left-side .hello,.im{
-    color: #680994;
-    font-weight: 600;
-}
-
-/* yeh vo javascript wala part hai   */
-#element{
-
-    display: inline;
-    margin: 0 5px;
-    color:#680994;
-
-    background-color: #F0D1FF;
-    font-size: 35px;
-    font-family: 'Poppins' , sans-serif;
-
-}
-
-
-/*------------------------------------- left side end --------------------------------- */
-
-/*---------------------------------- right side start ----------------------------------- */
-
-.main-section .main-right-side{
-
-    width: 50%;
-    height: 656px;
-    background-color: var(--another-main-color);
-    position: absolute;
-    right: 0;
-    top: 80px;
-    border-radius: 200px 0 0 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.main-section .main-right-side img{
-    width: 292px;
-    height: 302px;
-    margin-left: 200px;
-}
-/* -----------------------------------------------right side end----------------------------------------------- */
-/*-------------------------------------------- our main section end --------------------------------------------*/
-
-
-
 
 /* ------------------------------------second main section start (Introduction wala)------------------------------------------------------ */
 
@@ -336,13 +203,13 @@ header .right-side-menu .sub-menu button:hover{
 
 /* yeh left aur right waale ko grid m banane ke liye */
 .common-section{
-    background-color: var(--navbar-color);
+    background-color: var(--background-color);
     width: 100%;
     height: 518px;
     display: grid;
     grid-template-columns: 450px 871px; /*yeh grid dimensions deta hai  */
     margin-bottom: 9rem;
-    margin-top: 656px;
+    margin-top: 50px;
     padding: 0 20;
 }
 
@@ -366,7 +233,6 @@ header .right-side-menu .sub-menu button:hover{
     margin-top: 20px;
 }
 /* -----------------------------left side end --------------------------- */
-
 
 /* -----------------------------right side start --------------------------- */
 
@@ -459,6 +325,139 @@ header .right-side-menu .sub-menu button:hover{
 
 /* -----------------------------right side end --------------------------- */
 
-/*------------------------------------- second main section end (Introduction wala)------------------------------------------------------- */
+
+
+/***-------------------------------------------------------- Skills ------------------------------------------------------------***/
+.second-section-skills{
+    background-color: var(--navbar-color);
+    width: 100%;
+    height: 500px;
+}
+#skill .progress {
+    height: 8px;
+    border-radius: 5px;
+}
+
+h4{
+    font-size: 18px;
+    font-family: "Poppins" !important;
+    color: var(--home-ka-color);
+}
+
+h2{
+    font-size: 35px !important;
+    font-family: "Poppins" !important;
+    font-weight: 700 !important;
+    margin-top: 50px;
+}
+
+h3{
+    font-size: 25px !important;
+    color: var(--home-ka-color) !important;
+}
+
+#skill .progress .progress-bar {
+    width: 0px;
+    border-radius: 5px;
+    transition: 3s;
+    background-color: #680994 !important;
+}
+
+#skill .nav-pills .nav-link {
+    color: var(--dark);
+}
+
+#skill .nav-pills .nav-link.active {
+    color: #FFFFFF;
+}
+
+#skill .tab-content hr {
+    width: 30px;
+}
+
+.nav-pills {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    border-radius: 0.25rem;
+    border: 2px solid var(--button-background); /* Border color for the primary border */
+    background-color: var(--button-background); /* Set background color */
+    margin-top: 50px;
+}
+
+.nav-item {
+    width: 50%;
+}
+
+.nav-link {
+    display: block;
+    width: 50%;
+    font-size: 20px !important;
+    font-family: "Poppins" !important;
+    font-weight: 600 !important;
+    text-align: center;
+    background-color: transparent !important; /* Override Bootstrap */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white !important; /* Set text color */
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background-color: var(--main-color) !important; /* Override Bootstrap */
+    color: var(--home-ka-color); /* Text color for the active and hover states */
+    border-radius: 1rem;
+    font-style: italic;
+    color: var(--home-ka-color) !important;
+}
+
+
+/* CSS for tab content */
+.tab-content {
+     /* Border color for the primary border */
+     margin-top: 5px !important;
+     margin-bottom: 5px;
+     border: 2px solid var(--home-ka-color);
+}
+
+.tab-pane {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Additional styling for tab content items */
+.tab-content .row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    margin-top: 0 !important;
+    margin-bottom:0 !important;
+}
+
+.tab-content .col-sm-6 {
+    padding-left: 80px !important;
+    padding-right: 30px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.tab-content h4 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.tab-content hr {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+.tab-content p {
+    color: var(--home-ka-color) !important; /* Text color for primary elements */
+    margin-bottom: 0 !important;
+}
 
 

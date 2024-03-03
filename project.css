@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
+
+
+/* Basic things to add to every css start */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    --main-color : #B326F6;
+    --primary-color : #ffffff;
+    --button-background : #FF725E;
+    --background-color : #F0D1FF;
+    --another-main-color: rgba(191,59,254,0.37);
+    --navbar-color: rgba(229,173 , 255,0.4);
+    --home-ka-color:#680994;
+    background-color: var(--background-color);
+    font-size: 35px;
+}
+
+h1,h2{
+    font-family: 'Poppins' , sans-serif;
+    color: var(--main-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h3,h4{
+    font-family: 'Poppins' , sans-serif;
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+
+p,a,li,button{
+    font-family: 'Poppins' , sans-serif;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+button{
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+/* Basic things to add to every css end */
+
+/*----------------------- navbar style start  --------------------------------*/
+
+/* screen ki left right space ke liye  */
+header{
+    padding: 0 15rem;
+    background-color: var(--navbar-color);
+    position: relative;
+    z-index: 3;
+}
+
+/* mere logo k color  */
+header nav .left-side-menu .logo a h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* taki left-side left ho jaye aur right-side right */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+/*---------------------------------- left-side-navbar waala css-------------------------------------- */
+
+/* left-side ke andar left-right ke leye */
+header nav .left-side-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+
+}
+
+/* image choti karne ke leye  
+header nav .left-side-menu a img{
+    width: 13rem;
+    height: 5.5rem;
+}*/
+
+/* saari navbar ki cheeje ek line m laane ke leye  */
+header nav .left-side-menu .sub-menu{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* logo aur home aur about.. m space ke leye  */
+header nav .left-side-menu .sub-menu a{
+    margin-right: 2rem;
+}
+
+/* saari navbar ki cheeje ek line m laane ke leye  */
+header nav .left-side-menu .sub-menu a li{
+    font-size: 2rem;
+    font-weight: 600;
+    color:#680994;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    padding: 0;
+    transition: all 0.2s; /*hover effect ke leye imp  */
+}
+
+header nav .left-side-menu .sub-menu a li:hover{
+
+    color: var(--main-color);
+
+}
+
+/*------------------------------------------ right-side-navbar wala css--------------------------------------- */
+
+/* taki right wala content 50% total space m rahe  */
+header .right-side-menu{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+}
+
+/* taki right sbb right m chala jaye kyuki upar waale se nhi gaya */
+header .right-side-menu .sub-menu{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* link ko shi tarike dur karne ke leye */
+header .right-side-menu .sub-menu a{
+    margin-right: 10px;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+/* button ko gol krne ke leye */
+header .right-side-menu .sub-menu button{
+    margin-right: 1px;
+    padding: 0 1px;
+    background-color: white;
+    /*display:block;*/
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 99;
+}
+
+/* button prr hover kree  */
+header .right-side-menu .sub-menu button:hover{
+    background-color: #680994;
+    position: relative;
+    z-index: 99;
+}
+/*----------------------  navbar style end -------------------------------------- */
+
+/*-------------------------------------- our section third start ------------------------------------------ */
+
+/* yeh pura screen value set karne ke liye */
+.section-third{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 15rem;
+}
+
+/* yeh project heading  ke liye */
+.section-third h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+/* yeh PROJECT ka color change krne ke liye */
+.section-third h2 span{
+    color: var(--home-ka-color);
+}
+
+/* yeh project ke neche waala paragraph ke liye */
+.section-third p{
+    width: 400px;
+    height: 9rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+
+/* me imp hai projects card ke liye pura screen ko 3section m batta hai  */
+.section-third .section-third-task{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+}
+
+/* yeh humare heading waali image hai  */
+.section-third .section-third-task img{
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    padding-top: 10px;
+    margin-bottom: 0;
+    transition: all 0.3s;
+}
+
+/* yeh humare card ka content hai h3 and para */
+.section-third .section-third-task .task-1,
+.section-third .section-third-task .task-2,
+.section-third .section-third-task .task-3,
+.section-third .section-third-task .task-4,
+.section-third .section-third-task .task-5,
+.section-third .section-third-task .task-6{
+    width: 380px;
+    height: 460px;
+    padding-top: 10px;
+    background-color: var(--another-main-color);
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 1.5px 10px var(--home-ka-color);
+}
+
+/* card ko bada karna hover ke time aur baaki cheeje */
+.section-third .section-third-task .task-1:hover,
+.section-third .section-third-task .task-2:hover,
+.section-third .section-third-task .task-3:hover,
+.section-third .section-third-task .task-4:hover,
+.section-third .section-third-task .task-5:hover,
+.section-third .section-third-task .task-6:hover{
+    box-shadow: 0 2px 20px 1px var(--home-ka-color);
+    width: 385px;
+    height: 465px;
+   /* background-color: var(--navbar-color);*/
+}
+
+/* card m headings ke liye */
+.section-third .section-third-task .task-1 h3,
+.section-third .section-third-task .task-2 h3,
+.section-third .section-third-task .task-3 h3,
+.section-third .section-third-task .task-4 h3,
+.section-third .section-third-task .task-5 h3,
+.section-third .section-third-task .task-6 h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: var(--home-ka-color);
+    font-weight: 600;
+}
+
+/* cards me paragraph ke liye */
+.section-third .section-third-task .task-1 p,
+.section-third .section-third-task .task-2 p,
+.section-third .section-third-task .task-3 p,
+.section-third .section-third-task .task-4 p,
+.section-third .section-third-task .task-5 p,
+.section-third .section-third-task .task-6 p{
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    padding: 10px ;
+    color: var(--home-ka-color);
+
+}
+
+/* card m button ke div ke liye */
+.section-third .section-third-task .task-1 .button-class,
+.section-third .section-third-task .task-2 .button-class,
+.section-third .section-third-task .task-3 .button-class,
+.section-third .section-third-task .task-4 .button-class,
+.section-third .section-third-task .task-5 .button-class,
+.section-third .section-third-task .task-6 .button-class{
+    position: relative;
+    top: 132px;
+    align-items: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 0 60px;
+}
+
+/* yeh button ke liye */
+.section-third .section-third-task .task-1 .button-class button,
+.section-third .section-third-task .task-2 .button-class button,
+.section-third .section-third-task .task-3 .button-class button,
+.section-third .section-third-task .task-4 .button-class button,
+.section-third .section-third-task .task-5 .button-class button,
+.section-third .section-third-task .task-6 .button-class button{
+    width: 127px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-background);
+    color: white;
+    font-weight: 600;
+}
+
+/* yeh button ke liye */
+.section-third .section-third-task .task-1 .button-class button span,
+.section-third .section-third-task .task-2 .button-class button span,
+.section-third .section-third-task .task-3 .button-class button span,
+.section-third .section-third-task .task-4 .button-class button span,
+.section-third .section-third-task .task-5 .button-class button span,
+.section-third .section-third-task .task-6 .button-class button span{
+
+    padding: 5px;
+
+}
+
+/* yeh button ke hover ke liye */
+.section-third .section-third-task .task-1 .button-class button:hover,
+.section-third .section-third-task .task-2 .button-class button:hover,
+.section-third .section-third-task .task-3 .button-class button:hover,
+.section-third .section-third-task .task-4 .button-class button:hover,
+.section-third .section-third-task .task-5 .button-class button:hover,
+.section-third .section-third-task .task-6 .button-class button:hover{
+    background-color: #B326F6;
+    color: #680994;
+    font-style: italic;
+}
+
+
+
+.section-third .section-third-task .task-1:hover > img,
+.section-third .section-third-task .task-2:hover > img,
+.section-third .section-third-task .task-3:hover > img,
+.section-third .section-third-task .task-4:hover > img,
+.section-third .section-third-task .task-5:hover > img,
+.section-third .section-third-task .task-6:hover > img{
+    margin-top: 10px;
+    transform: rotate(360deg);
+    transition: 0.8s;
+}
+
+/* our section third end  */
