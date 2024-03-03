@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap');
+
+
+/* Basic things to add to every css start */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    --main-color : #B326F6;
+    --primary-color : #ffffff;
+    --button-background : #FF725E;
+    --background-color : #F0D1FF;
+    --another-main-color: rgba(191,59,254,0.37);
+    --navbar-color: rgba(229,173 , 255,0.4);
+    --home-ka-color:#680994;
+    background-color: var(--background-color);
+    font-size: 35px;
+}
+
+h1,h2{
+    font-family: 'Poppins' , sans-serif;
+    color: var(--main-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h3,h4{
+    font-family: 'Poppins' , sans-serif;
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+
+p,a,li,button{
+    font-family: 'Poppins' , sans-serif;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+button{
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+/* Basic things to add to every css end */
+
+/* our main style start  */
+
+/*----------------------- navbar style start  --------------------------------*/
+
+/* screen ki left right space ke liye  */
+header{
+    padding: 0 15rem;
+    background-color: var(--navbar-color);
+    position: relative;
+    z-index: 3;
+}
+
+/* taki left-side left ho jaye aur right-side right */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+/*---------------------------------- left-side-navbar waala css-------------------------------------- */
+
+/* left-side ke andar left-right ke leye */
+header nav .left-side-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+
+}
+
+/* image choti karne ke leye  
+header nav .left-side-menu a img{
+    width: 13rem;
+    height: 5.5rem;
+}*/
+
+/* saari navbar ki cheeje ek line m laane ke leye  */
+header nav .left-side-menu .sub-menu{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* logo aur home aur about.. m space ke leye  */
+header nav .left-side-menu .sub-menu a{
+    margin-right: 2rem;
+}
+
+/* saari navbar ki cheeje ek line m laane ke leye  */
+header nav .left-side-menu .sub-menu a li{
+    font-size: 2rem;
+    font-weight: 600;
+    color:#680994;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    padding: 0;
+    transition: all 0.2s; /*hover effect ke leye imp  */
+}
+
+header nav .left-side-menu .sub-menu a li:hover{
+
+    color: var(--main-color);
+
+}
+
+/*------------------------------------------ right-side-navbar wala css--------------------------------------- */
+
+/* taki right wala content 50% total space m rahe  */
+header .right-side-menu{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+}
+
+/* taki right sbb right m chala jaye kyuki upar waale se nhi gaya */
+header .right-side-menu .sub-menu{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* link ko shi tarike dur karne ke leye */
+header .right-side-menu .sub-menu a{
+    margin-right: 10px;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+/* button ko gol krne ke leye */
+header .right-side-menu .sub-menu button{
+    margin-right: 1px;
+    padding: 0 1px;
+    background-color: white;
+    /*display:block;*/
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 99;
+}
+
+/* button prr hover kree  */
+header .right-side-menu .sub-menu button:hover{
+    background-color: #680994;
+    position: relative;
+    z-index: 99;
+}
+/*----------------------  navbar style end -------------------------------------- */
+
+/*-------------------------------------------------- our main section start-----------------------------------------------------------------  */
+
+/*----------------------------------------------------- left side start ----------------------------------------------------------------------------------- */
+
+.main-section{
+    padding: 0 20rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.main-section h2{
+
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.main-section a button{
+    border-radius: 10px;
+    background-color: #FF725E;
+    color: white;
+    font-size: 25px;
+    padding: 0 1px;
+    width: 150px;
+    height: 50px;
+}
+
+.main-section a button:hover{
+    background-color: #B326F6;
+    color: #680994;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.main-section .main-left-side{
+
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    position: absolute;
+    top: 252px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+/* yeh sab ek line m karne ke liye */
+.main-section .main-left-side .single-line{
+    display: flex;
+    justify-content: space-between;
+}
+.main-section .main-left-side .hello {
+    display: inline;
+    margin: 0 5px;
+    margin-bottom: 0; /* Adjust the margin bottom */
+}
+
+/* yeh sab ek line m laane ke liye */
+.main-section .main-left-side .im,
+.main-section .main-left-side .sarthak {
+    display: inline;
+    margin: 0 5px;
+    margin-top: 0;
+    font-size: 45px;
+    
+}
+.main-section .main-left-side .im{
+    color: #680994;
+    font-weight: 600;
+    font-size: 43px;
+}
+.main-section .main-left-side .hello,.im{
+    color: #680994;
+    font-weight: 600;
+}
+
+/* yeh vo javascript wala part hai   */
+#element{
+
+    display: inline;
+    margin: 0 5px;
+    color:#680994;
+
+    background-color: #F0D1FF;
+    font-size: 35px;
+    font-family: 'Poppins' , sans-serif;
+
+}
+
+
+/*------------------------------------- left side end --------------------------------- */
+
+/*---------------------------------- right side start ----------------------------------- */
+
+.main-section .main-right-side{
+
+    width: 50%;
+    height: 656px;
+    background-color: var(--another-main-color);
+    position: absolute;
+    right: 0;
+    top: 80px;
+    border-radius: 200px 0 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main-section .main-right-side img{
+    width: 292px;
+    height: 302px;
+    margin-left: 200px;
+}
+/* -----------------------------------------------right side end----------------------------------------------- */
+/*-------------------------------------------- our main section end --------------------------------------------*/
+
+
+
+
+/* ------------------------------------second main section start (Introduction wala)------------------------------------------------------ */
+
+/* -----------------------------left side start --------------------------- */
+
+/* yeh left aur right waale ko grid m banane ke liye */
+.common-section{
+    background-color: var(--navbar-color);
+    width: 100%;
+    height: 518px;
+    display: grid;
+    grid-template-columns: 450px 871px; /*yeh grid dimensions deta hai  */
+    margin-bottom: 9rem;
+    margin-top: 656px;
+    padding: 0 20;
+}
+
+.common-section .left-side{
+    width: inherit;
+    height: inherit;
+}
+
+/* yeh vo jo image ke piche waala part hai na vo  */
+.common-section .left-side figure{
+    width: 332px;
+    height: 518px;
+    border-radius: 0 200px 200px 0;
+    background-color: var(--another-main-color);
+}
+
+.common-section .left-side img{
+    width: 430px;
+    height: 430px;
+    margin-left: 52px;
+    margin-top: 20px;
+}
+/* -----------------------------left side end --------------------------- */
+
+
+/* -----------------------------right side start --------------------------- */
+
+/* yeh right side ka content ekdum start m lanne ke liye */
+.common-section .right-side{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* yeh my aur introduction ko ek line m laane ke liye */
+
+
+.common-section .right-side .single-line-section-2 .My{
+}
+
+.common-section .right-side .single-line-section-2 .Introduction{
+
+    color: var(--home-ka-color);
+
+}
+
+/* yeh h2 ko ek line m laane ke liye aur baaki sab cheeje */
+.common-section .right-side .single-line-section-2 h2{
+    display: inline;
+    width: 308px;
+    height: 70px;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6.3rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+/* yeh mere li ke andar waale content ke liye */
+.common-section .right-side li{
+    color: var(--home-ka-color);
+    width: 871px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.common-section .right-side li span{
+    font-style: italic;
+    color: #B326F6;
+    font-weight: 600;
+}
+
+.common-section .right-side .button-grp{
+    float: right;
+    
+} 
+
+.common-section .right-side .button-grp .common-btn{
+
+    padding: 0.25px;
+    width: 100px;
+    height: 30px;
+    background-color: var(--button-background);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1210px;
+    right: 100px;
+    text-transform: lowercase;
+    font-style: "Poppins";
+    font-weight: 600;
+}
+
+.common-section .right-side .button-grp .common-btn:hover{
+    background-color: #B326F6;
+    color: #680994;
+    font-style: italic;
+}
+
+
+/* -----------------------------right side end --------------------------- */
+
+/*------------------------------------- second main section end (Introduction wala)------------------------------------------------------- */
