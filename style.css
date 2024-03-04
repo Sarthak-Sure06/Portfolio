@@ -25,6 +25,7 @@ body{
     --home-ka-color:#680994;
     background-color: var(--background-color);
     font-size: 35px;
+    width: 100%;
 }
 
 h1,h2{
