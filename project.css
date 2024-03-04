@@ -386,3 +386,74 @@ header .right-side-menu .sub-menu button:hover{
 }
 
 /* our section third end  */
+
+
+/*----------------------------------------------------------- footer section start -------------------------------------------------------------- */
+
+/* taki right wala content 50% total space m rahe  */
+
+
+/* taki right sbb right m chala jaye kyuki upar waale se nhi gaya */
+footer .right-side-menu .sub-menu{
+    margin-top: 10px;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+footer{
+    width: 100%;
+    background-color: #C756FC;
+    height: auto;
+    margin-left: 0;
+    padding: 0rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0;
+}
+
+/* yeh footer ki height ke liye */
+footer .copyright,.footer-menu{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: var(--home-ka-color);
+}
+
+footer .copyright h3,.footer-menu h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: var(--home-ka-color);
+}
+
+
+
+
+/* logos */
+/* taki right wala content 50% total space m rahe  */
+/* link ko shi tarike dur karne ke leye */
+footer .right-side-menu .sub-menu a{
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    padding-top: 10px;
+}
+
+/* button ko gol krne ke leye */
+footer .right-side-menu .sub-menu button{
+    margin-left: 0;
+    padding: 0 0px;
+    background-color: var(--home-ka-color);
+    /*display:block;*/
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+/* -----------------------------------------------------------footer section end ------------------------------------------------------- */

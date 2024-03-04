@@ -1,0 +1,143 @@
+/* Resposive start  */
+
+body{
+    --main-color : #B326F6;
+    --primary-color : #ffffff;
+    --button-background : #FF725E;
+    --background-color : #F0D1FF;
+    --another-main-color: rgba(191,59,254,0.37);
+    --navbar-color: rgba(229,173 , 255,0.4);
+    --home-ka-color:#680994;
+    background-color: var(--background-color);
+}
+
+@media (max-width:770px) {
+
+    header{
+        position: relative;
+    }
+    header, .main-section,.common-section{
+        padding: 0 5rem;
+    }
+
+   /* header nav{
+        padding-top: 1rem;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    header nav .left-side-menu{
+        width: 100%;
+        display: block;
+        order: 2;
+    }*/
+
+    /* mere logo k color  */
+    header nav .left-side-menu .logo{
+    display: block;
+    width: 100%;
+   }
+
+
+   /* mobile navigation  */
+   .mobile-navbar-btn{
+    display: block;
+    z-index: 999;
+    order: 1;
+    border: 2px solid var(--home-ka-color);
+    padding: 0;
+   }
+
+   .navbar{
+    /* display: none; */
+    width: 100%;
+    height: 50vh;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .navbar .left-side-menu{
+    /* display: none; */
+    position: absolute;
+    top: 30vh;
+   }
+
+   .navbar .right-side-menu {
+    position: absolute;
+    top: 45vh;
+   }
+
+   .navbar .left-side-menu .sub-menu {
+    flex-direction: column;
+   }
+   /*---------------------------main section ------------------ */
+
+   .main-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+   }
+
+   .main-section .main-left-side{
+    order: 1;
+    width: 100%;
+    margin-left: 50px;
+   }
+   .main-section .main-left-side .hello{
+    font-size: 40px;
+    line-height: 6rem;
+    margin-bottom: 20px;
+   }
+   .main-section .main-left-side .im,
+.main-section .main-left-side .sarthak{
+    font-size: 40px;
+    line-height: 4rem;
+    margin-bottom: 40px;
+}
+
+/* yeh vo javascript wala part hai   */
+#element{
+
+   font-size: 25px;
+   margin-bottom: 50px;
+
+}
+
+.main-section a button{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+   .main-section .main-right-side{
+    order: 2;
+    width: 120%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 450px;
+    margin-bottom: 0;
+    border-radius: 20px;
+   }
+
+   .main-section .main-right-side img{
+    width: 250px;
+    height: 260px;
+    margin: 0;
+    margin-top: 0;
+    margin-right: 4rem;
+   }
+    
+}

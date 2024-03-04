@@ -87,6 +87,9 @@ header{
     background-color: var(--navbar-color);
     position: relative;
     z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* taki left-side left ho jaye aur right-side right */
@@ -97,6 +100,9 @@ header nav{
     width: 100%;
     height: 80px;
 }
+
+
+
 
 /*---------------------------------- left-side-navbar waala css-------------------------------------- */
 
@@ -110,7 +116,7 @@ header nav .left-side-menu{
 }
 
 /* mere logo k color  */
-header nav .left-side-menu .logo a h3{
+header .logo a h3{
     font-size: 30px;
     font-weight: 600;
 }
@@ -125,6 +131,7 @@ header nav .left-side-menu a img{
 header nav .left-side-menu .sub-menu{
     height: inherit;
     display: flex;
+    margin-left: 180px;
     align-items: center;
     justify-content: end;
 }
@@ -197,10 +204,30 @@ header .right-side-menu .sub-menu button:hover{
     position: relative;
     z-index: 99;
 }
+
+/*----------------------------------------------- right side end -------------------------------------------------------------------- */
+
+
+/* mobile navigation menu button  */
+
+.mobile-navbar-btn{
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.mobile-navbar-btn .icon-open,.icon-close{
+    color: var(--home-ka-color);
+}
+
+.mobile-navbar-btn .icon-close{
+    display: none;
+}
+
 /*----------------------  navbar style end -------------------------------------- */
 
-/*-------------------------------------------------- our main section start-----------------------------------------------------------------  */
 
+/*-------------------------------------------------- our main section start-----------------------------------------------------------------  */
 /*----------------------------------------------------- left side start ----------------------------------------------------------------------------------- */
 
 .main-section{
@@ -329,22 +356,20 @@ header .right-side-menu .sub-menu button:hover{
 
 
 
-
 /* ------------------------------------second main section start (Introduction wala)------------------------------------------------------ */
-
-/* -----------------------------left side start --------------------------- */
-
-/* yeh left aur right waale ko grid m banane ke liye */
 .common-section{
     background-color: var(--navbar-color);
     width: 100%;
     height: 518px;
     display: grid;
     grid-template-columns: 450px 871px; /*yeh grid dimensions deta hai  */
-    margin-bottom: 9rem;
+    margin-bottom: 0;
     margin-top: 656px;
     padding: 0 20;
 }
+
+/* -----------------------------left side start --------------------------- */
+/* yeh left aur right waale ko grid m banane ke liye */
 
 .common-section .left-side{
     width: inherit;
@@ -460,5 +485,96 @@ header .right-side-menu .sub-menu button:hover{
 /* -----------------------------right side end --------------------------- */
 
 /*------------------------------------- second main section end (Introduction wala)------------------------------------------------------- */
+
+
+/* -----------------------------------------------quote section start ------------------------------------------------------ */
+.quote{
+   /* position: relative;*/
+   margin-top: 45px;
+   margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+/*------------------------------------------------------- quote section end  --------------------------------------------*/
+
+
+/*----------------------------------------------------------- footer section start -------------------------------------------------------------- */
+
+/* taki right wala content 50% total space m rahe  */
+
+
+/* taki right sbb right m chala jaye kyuki upar waale se nhi gaya */
+footer .right-side-menu .sub-menu{
+    margin-top: 10px;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+footer{
+    width: 100%;
+    background-color: #C756FC;
+    height: auto;
+    margin-left: 0;
+    padding: 0rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0;
+}
+
+/* yeh footer ki height ke liye */
+footer .copyright,.footer-menu{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: var(--home-ka-color);
+}
+
+footer .copyright h3,.footer-menu h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: var(--home-ka-color);
+}
+
+
+
+
+/* logos */
+/* taki right wala content 50% total space m rahe  */
+/* link ko shi tarike dur karne ke leye */
+footer .right-side-menu .sub-menu a{
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    padding-top: 10px;
+}
+
+/* button ko gol krne ke leye */
+footer .right-side-menu .sub-menu button{
+    margin-left: 0;
+    padding: 0 0px;
+    background-color: var(--home-ka-color);
+    /*display:block;*/
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+/* -----------------------------------------------------------footer section end ------------------------------------------------------- */
+
+
+
 
 
