@@ -1,0 +1,166 @@
+/* Resposive start  */
+
+
+@media screen and (max-width:770px) {
+
+    
+    html{
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        --main-color : #B326F6;
+        --primary-color : #ffffff;
+        --button-background : #FF725E;
+        --background-color : #F0D1FF;
+        --another-main-color: rgba(191,59,254,0.37);
+        --navbar-color: rgba(229,173 , 255,0.4);
+        --home-ka-color:#680994;
+        background-color: var(--background-color);
+        overflow-x: hidden;
+    }
+    
+        header{
+            position: relative;
+        }
+        header, .main-section,.common-section{
+            padding: 0 5rem;
+        }
+    
+       /* header nav{
+            padding-top: 1rem;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+        }
+    
+        header nav .left-side-menu{
+            width: 100%;
+            display: block;
+            order: 2;
+        }*/
+    
+        /* mere logo k color  */
+        header .logo{
+        display: block;
+        width: 100%;
+        z-index: 1000;
+       }
+    
+    
+       /* mobile navigation  */
+       .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+        order: 1;
+       /* border: 2px solid var(--home-ka-color);*/
+        padding: 0;
+       }
+    
+       .mobile-navbar-btn .icon-open{
+        width: 50px;
+       }
+    
+       /* yeh pure navbar ko page cover up krne ke liye  */
+       .navbar{
+        /* display: none; */
+        width: 100%;
+        height: 47vh;
+        background-color: var(--main-color);
+        position: fixed;
+        top: 0;
+        left: 0;
+    
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        /* transition ke liye  */
+       transform: translateX(100%);
+       transition: all 0.25s linear;
+    
+       opacity: 0;
+       visibility: hidden;
+       pointer-events: none;
+       
+       }
+    
+       .navbar .left-side-menu{
+        position: fixed; /* Change to fixed positioning */
+        top: 0;
+        bottom: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
+    }
+    
+    .navbar .right-side-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: auto; /* Adjust as needed */
+        display: flex;
+        flex-direction: row; /* Adjust as needed */
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
+    }
+    
+       .navbar .left-side-menu .sub-menu {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+       }
+    
+       .navbar .right-side-menu .sub-menu{
+        position: relative;
+        top: 120px;
+    
+       }
+    
+       /* link ko shi tarike dur karne ke leye */
+    header .right-side-menu .sub-menu a{
+        margin-right: 5px;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 2rem;
+    }
+    
+       .navbar .right-side-menu .sub-menu button{
+       
+        background-color: white;
+        /*display:block;*/
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+       }
+    
+       .navbar .right-side-menu .sub-menu button i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    
+       .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+       }
+    
+       .active .mobile-navbar-btn .icon-close{
+        display: block;
+        width: 40px;
+       }
+       .active .mobile-navbar-btn .icon-open{
+        width: 40px;
+        display: none;
+       }
+}

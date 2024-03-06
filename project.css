@@ -25,6 +25,7 @@ body{
     --home-ka-color:#680994;
     background-color: var(--background-color);
     font-size: 35px;
+    width: 100%;
 }
 
 h1,h2{
@@ -77,6 +78,8 @@ button{
 
 /* Basic things to add to every css end */
 
+/* our main style start  */
+
 /*----------------------- navbar style start  --------------------------------*/
 
 /* screen ki left right space ke liye  */
@@ -85,12 +88,9 @@ header{
     background-color: var(--navbar-color);
     position: relative;
     z-index: 3;
-}
-
-/* mere logo k color  */
-header nav .left-side-menu .logo a h3{
-    font-size: 30px;
-    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* taki left-side left ho jaye aur right-side right */
@@ -101,6 +101,9 @@ header nav{
     width: 100%;
     height: 80px;
 }
+
+
+
 
 /*---------------------------------- left-side-navbar waala css-------------------------------------- */
 
@@ -113,6 +116,12 @@ header nav .left-side-menu{
 
 }
 
+/* mere logo k color  */
+header .logo a h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
 /* image choti karne ke leye  
 header nav .left-side-menu a img{
     width: 13rem;
@@ -123,6 +132,7 @@ header nav .left-side-menu a img{
 header nav .left-side-menu .sub-menu{
     height: inherit;
     display: flex;
+    margin-left: 180px;
     align-items: center;
     justify-content: end;
 }
@@ -191,10 +201,30 @@ header .right-side-menu .sub-menu button{
 
 /* button prr hover kree  */
 header .right-side-menu .sub-menu button:hover{
-    background-color: #680994;
+    background-color: var(--home-ka-color);
     position: relative;
     z-index: 99;
 }
+
+/*----------------------------------------------- right side end -------------------------------------------------------------------- */
+
+
+/* mobile navigation menu button  */
+
+.mobile-navbar-btn{
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.mobile-navbar-btn .icon-open,.icon-close{
+    color: var(--home-ka-color);
+}
+
+.mobile-navbar-btn .icon-close{
+    display: none;
+}
+
 /*----------------------  navbar style end -------------------------------------- */
 
 /*-------------------------------------- our section third start ------------------------------------------ */

@@ -1,7 +1,7 @@
 /* Resposive start  */
 
 
-@media (max-width:770px) {
+@media screen and (max-width:770px) {
 
     
 html{
@@ -62,16 +62,16 @@ body{
     width: 50px;
    }
 
+   /* yeh pure navbar ko page cover up krne ke liye  */
    .navbar{
     /* display: none; */
     width: 100%;
     height: 47vh;
     background-color: var(--main-color);
-    position: absolute;
+    position: fixed;
     top: 0;
-    margin-left: 0;
     left: 0;
-    right: 0;
+
 
     display: flex;
     justify-content: center;
@@ -87,20 +87,64 @@ body{
    
    }
 
-   .navbar .left-side-menu .sub-menu {
-    position: absolute;
-    margin-left: 100px;
-    margin-right: 0;
-    margin-top: 0;
+   .navbar .left-side-menu{
+    position: fixed; /* Change to fixed positioning */
+    top: 0;
+    bottom: 0;
+    width: auto;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    z-index: 1001;
+}
+
+.navbar .right-side-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: auto; /* Adjust as needed */
+    display: flex;
+    flex-direction: row; /* Adjust as needed */
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+   .navbar .left-side-menu .sub-menu {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
    }
 
    .navbar .right-side-menu .sub-menu{
-    position: absolute;
-    margin-left: 20px;
-    margin-right: 80px;
-    margin-top: 100px;
+    position: relative;
+    top: 120px;
+
+   }
+
+   /* link ko shi tarike dur karne ke leye */
+header .right-side-menu .sub-menu a{
+    margin-right: 5px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+   .navbar .right-side-menu .sub-menu button{
+   
+    background-color: white;
+    /*display:block;*/
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+   }
+
+   .navbar .right-side-menu .sub-menu button i{
+    display: flex;
+    justify-content: center;
     align-items: center;
    }
 
@@ -127,6 +171,7 @@ body{
     height: 100%;
     display: flex;
     flex-flow: column;
+    margin-bottom: 10rem;
    }
 
    .main-section .main-left-side{
@@ -162,10 +207,12 @@ body{
     border-radius: 5px;
 }
 
+/* -----right side  ---------*/
    .main-section .main-right-side{
     order: 2;
     width: 120%;
     height: 10%;
+    background-color: var(--another-main-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,5 +229,118 @@ body{
     margin-top: 0;
     margin-right: 4rem;
    }
+
+   /* main section end  */
+
+   /*--------------------------------- common section start ------------------------------ */
+
+   /* left side  */
+   .common-section{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    padding: 0 5rem;
+   }
+
+   .common-section .left-side figure{
+    height:100%;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 0;
+    top: 0;
+   }
+
+   .common-section .left-side figure img{
+    width: 250px;
+    height: 260px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+   }
+
+   /*--------------- right side---------------  */
+
+   .common-section .right-side{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+   }
+
+   .common-section .right-side .single-line-section-2 h2{
+    font-size: 33px;
+   }
+
+   /* yeh mere li ke andar waale content ke liye */
+.common-section .right-side li{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10%;
+    font-size: 16px;
+}
+
+.common-section .right-side .button-grp {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Add margin to separate button from the list */
+}
+
+.common-section .right-side .button-grp .common-btn {
+    padding: 0.25px;
+    width: 100px;
+    height: 30px;
+    background-color: var(--button-background);
+    margin-right: 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: lowercase;
+    font-style: "Poppins";
+    font-weight: 600;
+}
+   /*--------------------------------- common section end ------------------------------ */
     
+
+   /* footer start  */
+
+   footer{
+    width: 100%;
+    height: auto;
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   footer .copyright, footer .footer-menu{
+    margin-top: 0;
+    margin-bottom: 0;
+   }
+
+   footer .right-side-menu .sub-menu{
+    margin-top: 1px;
+    justify-content: center;
+   }
+
+   footer .right-side-menu .sub-menu a{
+    padding: 0;
+    margin-bottom: 5px;
+   }
+
+   footer .copyright h3,footer .footer-menu h3{
+    font-size: 16px;
+   }
+
+   /* footer end  */
 }

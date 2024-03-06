@@ -449,39 +449,36 @@ header .right-side-menu .sub-menu button:hover{
     font-weight: 600;
 }
 
-.common-section .right-side .button-grp{
-    float: right;
-    
-} 
+/* Remove absolute positioning and adjust button alignment */
+.common-section .right-side .button-grp {
+    position: relative;
+    margin-left: auto; /* Align to the right end */
+    margin-bottom: 20px;
+}
 
-.common-section .right-side .button-grp .common-btn{
-
+/* Adjust button styles */
+.common-section .right-side .button-grp .common-btn {
     padding: 0.25px;
     width: 100px;
     height: 30px;
     background-color: var(--button-background);
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-left: 20px; /* Adjust left margin to create space between button and content */
     color: white;
     font-size: 16px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 1210px;
-    right: 100px;
     text-transform: lowercase;
     font-style: "Poppins";
     font-weight: 600;
 }
 
-.common-section .right-side .button-grp .common-btn:hover{
+.common-section .right-side .button-grp .common-btn:hover {
     background-color: #B326F6;
     color: #680994;
     font-style: italic;
 }
-
 
 /* -----------------------------right side end --------------------------- */
 
@@ -531,13 +528,13 @@ footer{
 }
 
 /* yeh footer ki height ke liye */
-footer .copyright,.footer-menu{
+footer .copyright, footer .footer-menu{
     margin-top: 10px;
     margin-bottom: 5px;
     color: var(--home-ka-color);
 }
 
-footer .copyright h3,.footer-menu h3{
+footer .copyright h3,footer .footer-menu h3{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 0;
